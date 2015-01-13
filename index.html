@@ -25,7 +25,7 @@
 </head>
 <body style="padding-top: 105px;" ng-app="eac-app">
 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavCtrl">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavCtrl">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -42,18 +42,18 @@
             <ul class="nav navbar-nav">
                 <li ng-class="{ active: isActive('/dashboard') }"><a href="#dashboard">Dashboard</a></li>
                 <li ng-class="{ active: isActive('/datacoverage') }"><a href="#datacoverage">Data Coverage</a></li>
-              <!--  <li ng-class="{ active: isActive('/hivaids') }"><a href="#hivaids">HIV/AIDS</a></li>
-                <li ng-class="{ active: isActive('/malaria') }"><a href="#malaria">Malaria</a></li>
-                <li ng-class="{ active: isActive('/tbleprosy') }"><a href="#tbleprosy">TB and Leprosy</a></li>
-                <li ng-class="{ active: isActive('/test') }"><a href="#test">Test</a></li>
-              -->
+                <!--  <li ng-class="{ active: isActive('/hivaids') }"><a href="#hivaids">HIV/AIDS</a></li>
+                  <li ng-class="{ active: isActive('/malaria') }"><a href="#malaria">Malaria</a></li>
+                  <li ng-class="{ active: isActive('/tbleprosy') }"><a href="#tbleprosy">TB and Leprosy</a></li>
+                  <li ng-class="{ active: isActive('/test') }"><a href="#test">Test</a></li>
+                -->
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://dhis.moh.go.tz/" target="_blank" class="navbar-link">Sign into DHIS2</a></li>
             </ul>
         </div>
-    </div>
-</nav>
+
+    </nav>
 
 <div class="container-fluid" ng-view>
 </div>
