@@ -1,0 +1,119 @@
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#content").find("[id^='tab']").hide();
+        $("#tabs li:first").attr("id","current");
+        $("#content #tab1").fadeIn();
+        $('#tabs a').click(function(e) {e.preventDefault();if ($(this).closest("li").attr("id") == "current"){return;}else{$("#content").find("[id^='tab']").hide();$("#tabs li").attr("id","");$(this).parent().attr("id","current");$('#' + $(this).attr('name')).fadeIn();}});
+    });
+</script>
+<div class="row">
+    <div class="col-md-12">
+        <div class="thumbnail">
+            <div class="dashboard">
+                <ul id="tabs">
+                    <li><a href="" name="tab1">HMIS</a></li>
+                    <li><a href="" name="tab2">HIV/AIDS</a></li>
+                    <li><a href="" name="tab3">Malaria</a></li>
+                    <li><a href="" name="tab4">TB and Leprosy</a></li>
+                </ul>
+                <div id="content" style="height: auto">
+                    <div id="tab1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="" class="thumbnail" >
+                                    <img src="https://dhis.moh.go.tz/api/charts/eumsSeh1E5o/data?width=1600&height=700">
+
+                                    <div class="caption">
+                                        <h3>HMIS Wagonjwa wa Nje (OPD)</h3>
+                                        <p>Reporting rate for Out Patient Department (OPD) for the previous quarter</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="" class="thumbnail" >
+                                    <img src="https://dhis.moh.go.tz/api/charts/QUl5DDF9zH2/data?width=1600&height=700">
+
+                                    <div class="caption">
+                                        <h3>HMIS Wagonjwa wa Kulazwa (IPD)</h3>
+                                        <p>Reporting rate for In Patient Department (IPD) for the previous quarter</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class ="row">
+                            <div class="col-xs-6 col-md-6">
+                                <a href="" class="thumbnail">
+                                    <img  src="https://dhis.moh.go.tz/api/charts/GxLXKBu0GPu/data">
+                                    <div class="caption">
+                                        <h3>HMIS Kliniki ya Wajawazito (ANC)</h3>
+                                        <p>Reporting rate for Antenatal Clinic for the previous quarter </p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-6 col-md-6">
+                                <a href="" class="thumbnail">
+                                    <img  src="https://dhis.moh.go.tz/api/charts/YtNUFPlWzeJ/data">
+                                    <div class="caption">
+                                        <h3>HMIS Huduma baada ya Kujifungua (PNC)</h3>
+                                        <p>Reporting rate for Postnatal Care for the previous quarter </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6">
+                                <a href="" class="thumbnail">
+                                    <img  src="https://dhis.moh.go.tz/api/charts/tNM3vMesjLK/data" >
+                                    <div class="caption">
+                                        <h3>HMIS Tracer Medicine</h3>
+                                        <p>Reporting rate for Tracer Medicine for the previous quarter</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-6">
+                                <a href="" class="thumbnail">
+                                    <img  src="https://dhis.moh.go.tz/api/charts/lS8jazynIEV/data">
+                                    <div class="caption">
+                                        <h3>HMIS Uzazi wa Mpango (FP)</h3>
+                                        <p>Reporting rate for Family Planning for the previpus quarter</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6">
+                                <a href="" class="thumbnail">
+                                    <img  src="https://dhis.moh.go.tz/api/charts/iycrVtaX3El/data" >
+                                    <div class="caption">
+                                        <h3>HMIS Huduma ya Watoto (Child Health)</h3>
+                                        <p>Reporting rate for Child Health for the previous quarter</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-6">
+                                <a href="" class="thumbnail">
+                                    <img  src="https://dhis.moh.go.tz/api/charts/m6cgq6tFPTR/data">
+                                    <div class="caption">
+                                        <h3>HMIS Kutoka wodi ya Wazazi (L & D)</h3>
+                                        <p>Reporting rate for Labor and Delivery for the previpus quarter</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" ng-include="'fragments/hivaids.html'">
+                    </div>
+                    <div id="tab3" ng-include="'fragments/malaria.html'">
+                    </div>
+                    <div id="tab4" ng-include="'fragments/tbleprosy.html'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>       
+</div>
