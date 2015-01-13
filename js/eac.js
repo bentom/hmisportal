@@ -8,7 +8,7 @@
             templateUrl: 'fragments/dashboard.html'
         });
         $routeProvider.when('/datacoverage', {
-            templateUrl: 'fragments/dataCoverage.html'
+            templateUrl: 'fragments/datacoverage.html'
         });
         $routeProvider.when('/malaria', {
             templateUrl: 'fragments/malaria.html'
