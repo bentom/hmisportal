@@ -16,8 +16,8 @@
         $routeProvider.when('/test', {
             templateUrl: 'fragments/test.html'
         });
-        $routeProvider.when('/immunization', {
-            templateUrl: 'fragments/immunization.html'
+        $routeProvider.when('/tbleprosy', {
+            templateUrl: 'fragments/tbleprosy.html'
         });
         $routeProvider.when('/hivaids', {
             templateUrl: 'fragments/hivaids.html'
