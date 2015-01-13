@@ -10,14 +10,17 @@
         $routeProvider.when('/datacoverage', {
             templateUrl: 'fragments/dataCoverage.html'
         });
-        $routeProvider.when('/hivaids', {
-            templateUrl: 'fragments/hivaids.html'
-        });
         $routeProvider.when('/malaria', {
             templateUrl: 'fragments/malaria.html'
         });
-        $routeProvider.when('/tbleprosy', {
-            templateUrl: 'fragments/tbleprosy.html'
+        $routeProvider.when('/familyplanning', {
+            templateUrl: 'fragments/familyplanning.html'
+        });
+        $routeProvider.when('/immunization', {
+            templateUrl: 'fragments/immunization.html'
+        });
+        $routeProvider.when('/hivaids', {
+            templateUrl: 'fragments/hivaids.html'
         });
         $routeProvider.otherwise({
             redirectTo: '/dashboard'
