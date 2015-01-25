@@ -13,8 +13,8 @@
         $routeProvider.when('/malaria', {
             templateUrl: 'fragments/malaria.html'
         });
-        $routeProvider.when('/test', {
-            templateUrl: 'fragments/test.html'
+        $routeProvider.when('/downloads', {
+            templateUrl: 'fragments/downloads.html'
         });
         $routeProvider.when('/tbleprosy', {
             templateUrl: 'fragments/tbleprosy.html'
