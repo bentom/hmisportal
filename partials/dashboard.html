@@ -1,0 +1,88 @@
+<div>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="dashboard">
+                    <ul id="jqueryTabs">
+                        <li><a href="#" ng-click="currentDashTab='tab-1'">Population</a></li>
+                        <li><a href="#" ng-click="currentDashTab='tab-2'">Health Facilities</a></li>
+                        <li><a href="#" ng-click="currentDashTab='tab-3'">Morbidity & Mortality</a></li>
+                        <li><a href="#" ng-click="currentDashTab='tab-4'">Human Resources</a></li>
+                    </ul>
+
+                    <div>
+                        <div id="tabs-1" ng-show="currentDashTab=='tab-1'">
+                            
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 ">
+                                    <div style="margin-top:10px;" class="col-md-12">
+                                            <label class="btn btn-success" ng-model="snippets[0].highchartsNG.options.chart.type" btn-radio="'column'" uncheckable>Column</label>
+                                            <label class="btn btn-success" ng-model="snippets[0].highchartsNG.options.chart.type" btn-radio="'line'" uncheckable>Line</label>
+                                            <label class="btn btn-success" ng-model="snippets[0].highchartsNG.options.chart.type" btn-radio="'bar'" uncheckable>Bar</label>
+                                            <label class="btn btn-success" ng-model="snippets[0].highchartsNG.options.chart.type" btn-radio="'area'" uncheckable>Area</label>
+                                            <label class="btn btn-success" ng-model="snippets[0].highchartsNG.options.chart.type" btn-radio="'spline'" uncheckable>Spline</label>
+                                            <label class="btn btn-success" ng-model="snippets[0].highchartsNG.options.chart.type" btn-radio="'areaspline'" uncheckable>Area Spline</label>
+                                            <label class="btn btn-success" ng-model="snippets[0].highchartsNG.options.chart.type" btn-radio="'pie'" uncheckable>Pie</label>
+                                            <button type="button" class="btn btn-primary" ng-model="snippets[0].highchartsNG.options.chart.polar" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">Polar</button>
+                                            <highchart id="snippets[0].placeHolder" config="snippets[0].highchartsNG"></highchart>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 ">
+                                    <div style="margin-top:10px;" class="col-md-12">
+                                        <label class="btn btn-success" ng-model="snippets[1].highchartsNG.options.chart.type" btn-radio="'column'" uncheckable>Column</label>
+                                        <label class="btn btn-success" ng-model="snippets[1].highchartsNG.options.chart.type" btn-radio="'line'" uncheckable>Line</label>
+                                        <label class="btn btn-success" ng-model="snippets[1].highchartsNG.options.chart.type" btn-radio="'bar'" uncheckable>Bar</label>
+                                        <label class="btn btn-success" ng-model="snippets[1].highchartsNG.options.chart.type" btn-radio="'area'" uncheckable>Area</label>
+                                        <label class="btn btn-success" ng-model="snippets[1].highchartsNG.options.chart.type" btn-radio="'spline'" uncheckable>Spline</label>
+                                        <label class="btn btn-success" ng-model="snippets[1].highchartsNG.options.chart.type" btn-radio="'areaspline'" uncheckable>Area Spline</label>
+                                        <label class="btn btn-success" ng-model="snippets[1].highchartsNG.options.chart.type" btn-radio="'pie'" uncheckable>Pie</label>
+                                        <button type="button" class="btn btn-primary" ng-model="snippets[1].highchartsNG.options.chart.polar" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false">Polar</button>
+                                        <highchart id="snippets[1].placeHolder" config="snippets[1].highchartsNG"></highchart>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-md-6">
+                                    <a href="https://dhis.moh.go.tz/dhis-web-mapping/app/index.html?id=gOn5n9yYWsM" class="thumbnail">
+                                        <img  src="https://dhis.moh.go.tz/api/maps/gOn5n9yYWsM/data">
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-md-6">
+                                    <a href="https://dhis.moh.go.tz/dhis-web-mapping/app/index.html?id=GMujs0590Cy" class="thumbnail">
+                                        <img  src="https://dhis.moh.go.tz/api/maps/GMujs0590Cy/data">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="tabs-2" ng-show="currentDashTab=='tab-2'">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 " style="width:100%;" ng-include="'partials/ownershipDistribution.html'">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 " style="width:100%;" ng-include="'partials/typeDistribution.html'">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-3" ng-show="currentDashTab=='tab-3'">
+                        </div>
+                        <div id="tabs-4" ng-show="currentDashTab=='tab-4'">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

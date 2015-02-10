@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="thumbnail">
+            <div class="dashboard">
+                <ul id="jqueryTabs">
+                    <li><a href="#"  ng-click="currentCoverageTab='tab-1'">HMIS</a></li>
+                    <li><a href="#"  ng-click="currentCoverageTab='tab-2'">HIV/AIDS</a></li>
+                    <li><a href="#"  ng-click="currentCoverageTab='tab-3'">Malaria</a></li>
+                    <li><a href="#"  ng-click="currentCoverageTab='tab-4'">TB and Leprosy</a></li>
+                </ul>
+                <div id="content" style="height: auto">
+                    <div id="tab1"  ng-show="currentCoverageTab=='tab-1'" ng-include="'partials/hmis.html'"></div>
+                    <div id="tab2"  ng-show="currentCoverageTab=='tab-2'" ng-include="'partials/hivaids.html'">
+                    </div>
+                    <div id="tab3"  ng-show="currentCoverageTab=='tab-3'" ng-include="'partials/malaria.html'">
+                    </div>
+                    <div id="tab4"  ng-show="currentCoverageTab=='tab-4'" ng-include="'partials/tbleprosy.html'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
