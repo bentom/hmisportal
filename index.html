@@ -26,9 +26,11 @@
                 <md-tabs md-selected="selectedIndex">
                     <md-tab ng-repeat="tab in tabs" ng-disabled="tab.disabled" label="{{tab.title}}">
                         <div class="demo-tab tab{{$index%4}}" layout="column" layout-fill layout-align="space-around center">
-                            <div style="min-height:200px;width:100%">
-                                <ng-include src="tab.url"></ng-include>
-                            </div>
+                            <md-content class="md-padding" style="height: 600px;padding: 24px;width:100%">
+                                <div style="min-height:200px;width:100%">
+                                    <ng-include src="tab.url"></ng-include>
+                                </div>
+                            </md-content>
                         </div>
                     </md-tab>
                 </md-tabs>

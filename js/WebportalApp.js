@@ -27,7 +27,7 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
             //    placeHolder:"chartx"
             //},
             {
-                name:"Population By Region 2014",
+                name:"Regional Populations For Year 2014",
                 url:"data/regionPopulation.json",
                 html:"",
                 layout: {
@@ -37,14 +37,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Population count in Millions"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"Population By District 2014",
+                name:"District Populations For Year 2014",
                 url:"data/districtPopulation.json",
                 html:"",
                 layout: {
@@ -54,14 +55,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Districts",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Population count in Millions"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"All HMIS Form Completeness By Region 2014",
+                name:"Data Reporting Rate of HMIS Forms For Regions in 2014",
                 url:"data/allHMISCompletenesss.json",
                 html:"",
                 layout: {
@@ -79,14 +81,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"OPD and IPD Completeness By Region 2014",
+                name:"Data Reporting Rate of OPD and IPD For Regions in 2014",
                 url:"data/OpdIpdCompleteness.json",
                 html:"",
                 layout: {
@@ -97,14 +100,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"ANC and L&D Completeness By Region 2014",
+                name:"Data Reporting Rate of ANC and L&D For Regions in 2014",
                 url:"data/AncLandDCompleteness.json",
                 html:"",
                 layout: {
@@ -115,14 +119,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"PNC and Family Planning Completeness By Region 2014",
+                name:"Data Reporting Rate of PNC and Family Planning For Regions in 2014",
                 url:"data/PncAndFPCompleteness.json",
                 html:"",
                 layout: {
@@ -133,14 +138,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"Tracer Drugs and Child Health Completeness By Region 2014",
+                name:"Data Reporting Rate of Tracer Drugs and Child Health For Regions in 2014",
                 url:"data/tracerAndChildHealthCompleteness.json",
                 html:"",
                 layout: {
@@ -151,14 +157,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"Completeness By Ownership for Tanzania 2014",
+                name:"Data Reporting Rate of HMIS Forms By Ownership for Tanzania in 2014",
                 url:"data/completenessByOwnership.json",
                 html:"",
                 layout: {
@@ -176,14 +183,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Ownership",name:"IymWT9V0HZI"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"Completeness By Type for Tanzania 2014",
+                name:"Data Reporting Rate of HMIS Forms By Type for Tanzania in 2014",
                 url:"data/completenessByType.json",
                 html:"",
                 layout: {
@@ -201,14 +209,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Type",name:"VG4aAdXA4JI"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"All NACP Forrms Completeness by Region 2014",
+                name:"Data Reporting Rate of NACP Forms For Regions in 2014",
                 url:"data/allNACPCompleteness.json",
                 html:"",
                 layout: {
@@ -222,14 +231,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NACP HIV Care and Treatment Reporting Forrms Completeness by Region 2014",
+                name:"Data Reporting Rate of NACP HIV Care and Treatment for Regions in 2014",
                 url:"data/allNACPCompleteness.json",
                 html:"",
                 layout: {
@@ -239,14 +249,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NACP Home based Care(HUWANYU) Completeness by Region 2014",
+                name:"Data Reporting Rate of NACP Home based Care(HUWANYU) For Regions in 2014",
                 url:"data/allNACPCompleteness.json",
                 html:"",
                 layout: {
@@ -256,14 +267,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NACP HIV Testing and Counselling (HTC) Completeness by Region 2014",
+                name:"Data Reporting Rate of NACP HIV Testing and Counselling (HTC) For Regions in 2014",
                 url:"data/allNACPCompleteness.json",
                 html:"",
                 layout: {
@@ -273,14 +285,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NACP_Sexually Transmitted Infections (STI) Completeness by Region 2014",
+                name:"Data Reporting Rate of NACP_Sexually Transmitted Infections (STI) For Regions in 2014",
                 url:"data/allNACPCompleteness.json",
                 html:"",
                 layout: {
@@ -290,14 +303,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"All NMCP Forrms Completeness by Region 2014",
+                name:"Data Reporting Rate of NMCP Forms For Regions in 2014",
                 url:"data/allNMCPCompleteness.json",
                 html:"",
                 layout: {
@@ -309,14 +323,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NMCP_National Malaria Control Programme Completeness by Region 2014",
+                name:"Data Reporting Rate of NMCP_National Malaria Control Programme For Regions in 2014",
                 url:"data/allNMCPCompleteness.json",
                 html:"",
                 layout: {
@@ -326,14 +341,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"HMIS_Wagonjwa wa Nje (OPD) Completeness by Region 2014",
+                name:"Data Reporting Rate of Wagonjwa wa Nje (OPD) For Regions in 2014",
                 url:"data/allNMCPCompleteness.json",
                 html:"",
                 layout: {
@@ -343,14 +359,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"All NTLP Form Completeness By Region 2014",
+                name:"Data Reporting Rate of NTLP Form For Regions in 2014",
                 url:"data/allNTLPCompleteness.json",
                 html:"",
                 layout: {
@@ -367,14 +384,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NTLP_LEP09 a) PB Leprosy patients Treatment outcome Completeness By Region 2014",
+                name:"Data Reporting Rate of NTLP_LEP09 a) PB Leprosy patients Treatment outcome For Regions in 2014",
                 url:"data/allNTLPCompleteness.json",
                 html:"",
                 layout: {
@@ -384,14 +402,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NTLP_LEP09 b) MB Leprosy patients treatment outcome Completeness By Region 2014",
+                name:"Data Reporting Rate of NTLP_LEP09 b) MB Leprosy patients treatment outcome For Regions in 2014",
                 url:"data/allNTLPCompleteness.json",
                 html:"",
                 layout: {
@@ -401,14 +420,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NTLP_LEP09 c) Outcome of standard treatment for reaction Completeness By Region 2014",
+                name:"Data Reporting Rate of NTLP_LEP09 c) Outcome of standard treatment for reaction For Regions in 2014",
                 url:"data/allNTLPCompleteness.json",
                 html:"",
                 layout: {
@@ -418,14 +438,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NTLP_LEP08 Leprosy Drugs Order Calculation Form Completeness By Region 2014",
+                name:"Data Reporting Rate of NTLP_LEP08 Leprosy Drugs Order Calculation Form For Regions 2014",
                 url:"data/allNTLPCompleteness.json",
                 html:"",
                 layout: {
@@ -435,14 +456,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NTLP_LEP07 case notification report of leprosy Completeness By Region 2014",
+                name:"Data Reporting Rate of NTLP_LEP07 case notification report of leprosy For Regions in 2014",
                 url:"data/allNTLPCompleteness.json",
                 html:"",
                 layout: {
@@ -452,14 +474,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NTLP_LEP10 Annual_Report on Prevention of Disability Completeness By Region 2014",
+                name:"Data Reporting Rate of NTLP_LEP10 Annual_Report on Prevention of Disability For Regions in 2014",
                 url:"data/allNTLPCompleteness.json",
                 html:"",
                 layout: {
@@ -469,14 +492,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NTLP_TB08 Drugs and Lab Supplies Order Calculation Form Completeness By Region 2014",
+                name:"Data Reporting Rate of NTLP_TB08 Drugs and Lab Supplies Order Calculation Form For Regions in 2014",
                 url:"data/allNTLPCompleteness.json",
                 html:"",
                 layout: {
@@ -486,14 +510,15 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
                 placeHolder:"populationChart"
             },
             {
-                name:"NTLP_TB07_Tuberculosis and TB/HIV Completeness By Region 2014",
+                name:"Data Reporting Rate of NTLP_TB07_Tuberculosis and TB/HIV For Regions in 2014",
                 url:"data/allNTLPCompleteness.json",
                 html:"",
                 layout: {
@@ -503,7 +528,8 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                     row: {label:"Regions",name:"ou"},
                     filters: [
                         {label:"Year",name:"value"}
-                    ]
+                    ],
+                    yAxis: "Data Reporting Rate(%)"
                 },
                 object:"chart",
                 type:"column",
@@ -511,7 +537,7 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
             }
         ];
 
-        angular.forEach($scope.snippets,function(snippet){
+        angular.forEach($scope.snippets,function(snippet,snippetIndex){
             if(!angular.isUndefined(snippet.url) && snippet.url.length>0) {
                 //Fetch data from url
                 $http.get(snippet.url).success(function(data){
@@ -530,6 +556,7 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                             snippet.highchartsNG.options[snippet.object].type="bar";
                             snippet.highchartsNG.options[snippet.object].renderTo=snippet.placeHolder;
                         }
+                        //snippet.highchartsNG.options[snippet.object].height=700;
                     }
                     /*
                      * Insert Series data and their titles
@@ -537,7 +564,7 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                      */
                     //Go through each column to make a series with data and it's label
                     snippet.highchartsNG.series = [];
-                    snippet.highchartsNG.yAxis = {};
+                    snippet.highchartsNG.yAxis = [];
                     snippet.highchartsNG.xAxis = {labels:{rotation:-45}};
                     snippet.highchartsNG.xAxis.categories=[];
                     angular.forEach(snippet.layout.columns,function(column,columnIndex){
@@ -558,24 +585,70 @@ angular.module('WeportalApp', ['ngMaterial','highcharts-ng','ui.bootstrap'])
                             //Use column index to check if the column match name of our serie
                             //and extract value or skip
                             if(data.metaData.names[ row[serieIndex] ] == column.label) {
-                                serie.data.push(Number(row[2]));//Push eligible value to serie
+                                var dataLabel='';
                                 if(serieIndex==0) {
-                                    if(! $scope.contains(snippet.highchartsNG.xAxis.categories,data.metaData.names[ row[1] ]))
-                                        snippet.highchartsNG.xAxis.categories.push(data.metaData.names[ row[1] ]);
+                                    if(! $scope.contains(snippet.highchartsNG.xAxis.categories,data.metaData.names[ row[1] ])) {
+                                        dataLabel=  data.metaData.names[ row[1] ];
+                                        snippet.highchartsNG.xAxis.categories.push( dataLabel);
+                                    }
                                 }else {
-                                    if(! $scope.contains(snippet.highchartsNG.xAxis.categories,data.metaData.names[ row[0] ]))
-                                        snippet.highchartsNG.xAxis.categories.push(data.metaData.names[ row[0] ]);
+                                    if(! $scope.contains(snippet.highchartsNG.xAxis.categories,data.metaData.names[ row[0] ])) {
+                                        dataLabel = data.metaData.names[ row[0] ];
+                                        snippet.highchartsNG.xAxis.categories.push(dataLabel);
+                                    }
+                                }
+                                serie.data.push([dataLabel+"("+Number(row[2])+")",Number(row[2])]);//Push eligible value to serie
+                            }
+                        });
+                        snippet.highchartsNG.series.push(serie);
+                        if(snippetIndex==2) {
+                            console.log(snippet.name);
+                            console.log(snippet.highchartsNG);
+                        }
+                    });
+                    //Add pie chart plot options
+                    snippet.highchartsNG.plotOptions= {
+                        column: {
+                            stacking: 'normal',
+                            dataLabels: {
+                                enabled: true,
+                                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                                style: {
+                                    textShadow: '0 0 3px black'
                                 }
                             }
-                        })
-                        snippet.highchartsNG.series.push(serie);
-                        //Setup yAxis for the column
-                        snippet.highchartsNG.yAxis[columnIndex] ={
-                                "title":{ "text":column.label, "style":{"color":"#0D0DC1"} }
-                        };
+                        },
+                        pie: {
+                            showInLegend: true
+                        }
+                    };
 
-
-                    });
+                    //Setup yAxis for the column
+                    if(snippet.layout.yAxis=="Data Reporting Rate(%)") {
+                        //Hack to set maximum for completeness
+                        snippet.highchartsNG.yAxis.push({
+                            "title":{ "text":snippet.layout.yAxis, "style":{"color":"#0D0DC1"} },
+                            "max":100,
+                            stackLabels: {
+                                enabled: true,
+                                style: {
+                                    fontWeight: 'bold',
+                                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                                }
+                            }
+                        });
+                    }else {
+                        snippet.highchartsNG.yAxis.push({
+                            "title":{ "text":snippet.layout.yAxis, "style":{"color":"#0D0DC1"} },
+                            stackLabels: {
+                                enabled: true,
+                                style: {
+                                    fontWeight: 'bold',
+                                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                                }
+                            }
+                        });
+                    }
                     //Additional settings
                     //snippet.highchartsNG.loading="false";
                     snippet.highchartsNG.credits={position:{align:'left',verticalAlign:'bottom',x:10,y:-10}};
